@@ -1,0 +1,35 @@
+.statsSection {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+.statItem {
+  padding: var(--spacing-md);
+}
+
+.statNumber {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xs);
+  display: block;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

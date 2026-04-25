@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeFront - NGO Template Documentation</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 2rem; }
+        h1, h2, h3 { color: #0B2545; }
+        h1 { border-bottom: 2px solid #136F63; padding-bottom: 0.5rem; }
+        code { background: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; }
+        pre { background: #f4f4f4; padding: 1rem; border-radius: 4px; overflow-x: auto; }
+        .alert { padding: 1rem; margin-bottom: 1rem; border-radius: 4px; }
+        .alert-info { background: #e7f3fe; border-left: 4px solid #2196F3; }
+    </style>
+</head>
+<body>
+    <h1>HopeFront NGO Template Documentation</h1>
+    <p><strong>Version:</strong> 1.0.0<br>
+    <strong>Author:</strong> Antigravity<br>
+    <strong>Framework:</strong> Next.js 14 (App Router) + React 18</p>
+
+    <h2>1. Introduction</h2>
+    <p>Thank you for purchasing the HopeFront NGO Template. This template is designed specifically for charities, non-profits, and fundraising organizations. It is built with Next.js and Vanilla CSS modules to provide maximum performance, excellent SEO, and easy customizability without being locked into complex utility CSS frameworks.</p>
+
+    <h2>2. Installation & Setup</h2>
+    <div class="alert alert-info">
+        <strong>Requirements:</strong> Ensure you have Node.js 18.x or later installed on your system.
+    </div>
+    <ol>
+        <li>Extract the downloaded zip file to your preferred location.</li>
+        <li>Open your terminal and navigate to the project directory.</li>
+        <li>Install dependencies by running:
+            <pre><code>npm install</code></pre>
+        </li>
+        <li>Start the development server:
+            <pre><code>npm run dev</code></pre>
+        </li>
+        <li>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser to see the template.</li>
+    </ol>
+
+    <h2>3. Project Structure</h2>
+    <p>The project follows standard Next.js App Router conventions:</p>
+    <ul>
+        <li><code>/app</code> - Contains page layouts, global CSS, and main routes (e.g., <code>page.tsx</code>, <code>layout.tsx</code>).</li>
+        <li><code>/components</code> - Contains all reusable React components (Navbar, Hero, CampaignCard, Footer) and their respective CSS modules.</li>
+    </ul>
+
+    <h2>4. Customization</h2>
+    <h3>Changing Colors and Fonts</h3>
+    <p>All global styles and theme variables are managed in <code>app/globals.css</code>. To change the brand colors, locate the <code>:root</code> variables and update them:</p>
+    <pre><code>:root {
+  --primary-color: #YourColor;
+  --secondary-color: #YourColor;
+  --accent-color: #YourColor;
+}</code></pre>
+    <p>Fonts are loaded via Next.js Font Optimization in <code>app/layout.tsx</code>. You can easily swap 'Inter' and 'Outfit' with other Google Fonts.</p>
+
+    <h2>5. Deployment</h2>
+    <p>This Next.js application can be seamlessly deployed to Vercel, Netlify, or any standard Node.js hosting environment.</p>
+    <pre><code>npm run build
+npm run start</code></pre>
+
+    <h2>6. Support</h2>
+    <p>If you have any questions or need further assistance, please contact our support team through the ThemeForest item support tab.</p>
+</body>
+</html>

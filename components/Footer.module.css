@@ -1,0 +1,104 @@
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: var(--spacing-xxl) 0 var(--spacing-lg);
+  font-family: var(--font-inter), sans-serif;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .footerTop {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+.footerCol h4 {
+  color: var(--text-light);
+  font-family: var(--font-playfair), serif;
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: var(--font-playfair), serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+  display: inline-block;
+}
+
+.footerCol p {
+  color: rgba(251, 249, 246, 0.7);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footerLinks a {
+  color: rgba(251, 249, 246, 0.7);
+  transition: color var(--transition-fast);
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+.footerLinks a:hover {
+  color: var(--accent-color);
+  transform: translateX(4px);
+}
+
+.newsletterForm {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  outline: none;
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  border-color: var(--accent-color);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(251, 249, 246, 0.5);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+}
